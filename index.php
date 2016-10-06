@@ -28,6 +28,7 @@
                         <select>
                             <option value="cuiaba">Cuiabá</option>
                             <option value="araputanga">Araputanga</option>
+                            <option value="cpa">CPA</option>
                         </select>
                     </div>
                     <div>
