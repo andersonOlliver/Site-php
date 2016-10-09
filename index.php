@@ -67,12 +67,7 @@
             </form>
         </div>
         <footer>
-
+            
         </footer>
-        <script>
-            function somar() {
-                getElementsByClassName('casa')
-            }
-        </script>
     </body>
 </html>
