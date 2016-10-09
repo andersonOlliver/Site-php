@@ -21,16 +21,30 @@
                         <li><a href="admin.php">Cadastro</a></li>
                         <li><a href="#">Fotos</a></li>
                         <li><a href="https://www.facebook.com/Aratur/">Facebook</a></li>
-                        <li><a href="#">Fale conosco</a></li>
+                        <li><a href="agendamento.php">Agendamento</a></li>
                     </ul>
                 </nav>
             </header>
         </div>
         <main class="principal painel">
             <section>
+                <div id="descricao">
+                    <p>Solicite sua passagem</p>
+                </div>
                 <form action="" method="">
                     <fieldset>
-                        <legend>Agendamento</legend>
+                        <legend>Dados Pessoais</legend>
+                        <div>
+                            <label>Nome</label>
+                            <input type="text" name="nome" placeholder="Digite seu nome"> 
+                            <label>Sobrenome</label>
+                            <input type="text" name="sobrenome" placeholder="Digite seu sobrenome"
+                        </div>
+
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Dados Endereço</legend>
                         <div id="destino"
                              <label>Cidade Origem</label>
                             <select>
@@ -45,7 +59,7 @@
                         </div>
 
                     </fieldset>
-
+                    <button type="submit">Salvar</button>
                 </form>
 
             </section>

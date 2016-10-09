@@ -15,9 +15,9 @@
           <ul type="disk">
             <li><a href="index.php">Home</a></li>
             <li><a href="admin.php">Cadastro</a></li>
-            <li><a href="#">Fotos</a></li>
+            <li><a href="login.php">Sistur</a></li>
             <li><a href="https://www.facebook.com/Aratur/">Facebook</a></li>
-            <li><a href="#">Fale conosco</a></li>
+            <li><a href="agendamento.php">Agendamento</a></li>
           </ul>
         </nav>
       </header>
