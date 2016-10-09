@@ -1,0 +1,514 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Arimo';
+@import 'https://fonts.googleapis.com/css?family=Baloo+Tamma';
+@import 'https://fonts.googleapis.com/css?family=Pacifico';
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
+@import 'https://fonts.googleapis.com/css?family=Racing+Sans+One';
+@import 'https://fonts.googleapis.com/css?family=Monofett';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Squada+One';
+
+@import 'https://fonts.googleapis.com/css?family=Bitter';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #dddddd;
+    color: rgba(0, 0, 0, 1);
+    min-width: 319px;
+}
+
+p{
+    text-align: justify;
+    /*text-indent: 50px;*/
+}
+
+
+header{
+    position: fixed;
+    background-color: #34495e;
+    height: 125px;
+    width: 100%;
+    z-index: 2;
+}
+header img{
+
+    width: 160px;
+    height: 120px;
+    margin-left: 50px;
+    margin-top: 1px;
+}
+
+
+/* Formatação de menu */
+nav#menu{
+    display: block;
+    float: right;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 00px;
+    left: auto;
+    right: 0;
+    padding-right: 2%;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    -woz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+}
+
+nav#menu li:hover{
+    background-color: #1abc9c;
+}
+
+nav#menu h1{
+    display: none;
+}
+
+nav#menu a{
+    font-family: 'Squada One', cursive;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    color: #ffffff
+}
+
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda {
+  margin-top: 50px;
+  position: relative;
+  border: 8px solid white;
+  box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img{
+  width: 100%;
+  height: 100%;
+}
+
+/*TELA GRANDE*/
+@media only screen and (min-width: 987px){
+
+  .principal{
+      padding-top: 90px;
+      width: 80%;
+      margin: auto;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  figure.foto-legenda figcaption{
+    font-family: 'Bitter', serif;
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: justify;
+    text-shadow: 2px 2px 8px #000;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-top: 28%;
+    box-sizing: border-box;
+    transition: opacity 1s;
+  }
+
+  #caixa-1{
+      background: radial-gradient(#ecf0f1,#2ecc71);
+      width: 46%;
+      min-height: 420px;
+      margin: 2%;
+      float: left;
+      border-radius: 10px;
+  }
+
+  #one{
+      font-size: 22px;
+      text-align: center;
+      border-bottom: 5px solid #ecf0f1;
+  }
+
+  section div img{
+      width: 70%;
+      height: 120px;
+      padding-top: 2%;
+      margin: 0 15%;
+  }
+
+  #caixa-2{
+      background: radial-gradient(#ecf0f1,#2ecc71);
+      border-radius: 10px;
+      width: 46%;
+      height: auto;
+      margin: 2% 2% 1% 2%;
+      float: right;
+  }
+  #two{
+      font-size: 22px;
+      text-align: center;
+      border-bottom: 5px solid #ecf0f1;
+  }
+
+  #partner{
+      width: 200px;
+      height: 100px;
+      padding: 10px 0px 5px 20px;
+  }
+
+  #caixa-3{
+      background: radial-gradient(#ecf0f1,#2ecc71);
+      border-radius: 10px;
+      width: 46%;
+      height: 150px;
+      margin: 1% 2% 2% 2%;
+      float: right;
+  }
+  #tree{
+      font-size: 22px;
+      text-align: center;
+      border-bottom: 5px solid #ecf0f1;
+  }
+
+}
+
+  /*TELA MEDIA*/
+@media only screen and (min-width: 850px ) and ( max-width: 986px){
+
+  .principal{
+      padding-top: 90px;
+      width: 85%;
+      margin: auto;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+  }
+
+  figure.foto-legenda figcaption{
+    /*font-family: 'Quicksand', sans-serif;*/
+    font-family: 'Bitter', serif;
+    opacity: 0;
+    position: absolute;
+    /*top: 0px;*/
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: justify;
+    text-shadow: 2px 2px 8px #000;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-top: 23%;
+    box-sizing: border-box;
+    transition: opacity 1s;
+  }
+
+  #caixa-1{
+
+      background: radial-gradient(#ecf0f1,#2ecc71);
+      width: 46%;
+      min-height: 420px;
+      margin: 2%;
+      /*margin-top: 2%;*/
+      float: left;
+      border-radius: 10px;
+  }
+
+  #one{
+      font-size: 22px;
+      text-align: center;
+      border-bottom: 5px solid #ecf0f1;
+
+  }
+  section div img{
+      width: 70%;
+      height: 120px;
+      padding-top: 2%;
+      margin: 0 15%;
+  }
+
+  #caixa-2{
+      background: radial-gradient(#ecf0f1,#2ecc71);
+      border-radius: 10px;
+      width: 46%;
+      height: auto;
+      margin: 2% 2% 1% 2%;
+      float: right;
+  }
+  #two{
+      font-size: 22px;
+      text-align: center;
+      border-bottom: 5px solid #ecf0f1;
+  }
+
+  #partner{
+      width: 200px;
+      height: 100px;
+      padding: 10px 0px 5px 20px;
+  }
+
+  #caixa-3{
+      background: radial-gradient(#ecf0f1,#2ecc71);
+      border-radius: 10px;
+      width: 46%;
+      height: 150px;
+      margin: 1% 2% 2% 2%;
+      float: right;
+
+  }
+  #tree{
+      font-size: 22px;
+      text-align: center;
+      border-bottom: 5px solid #ecf0f1;
+  }
+
+}
+  /*TELA ABAIXO DA MEDIA*/
+@media only screen and (min-width: 730px ) and ( max-width: 849px){
+
+  .principal{
+      padding-top: 90px;
+      width: 90%;
+      margin: auto;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+  }
+
+  figure.foto-legenda figcaption{
+    /*font-family: 'Quicksand', sans-serif;*/
+    font-family: 'Bitter', serif;
+    opacity: 0;
+    position: absolute;
+    /*top: 0px;*/
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: justify;
+    text-shadow: 2px 2px 8px #000;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-top: 18%;
+    box-sizing: border-box;
+    transition: opacity 1s;
+  }
+
+  #caixa-1{
+
+      background: radial-gradient(#ecf0f1,#2ecc71);
+      width: 46%;
+      min-height: 420px;
+      margin: 2%;
+      /*margin-top: 2%;*/
+      float: left;
+      border-radius: 10px;
+  }
+
+  #one{
+      font-size: 22px;
+      text-align: center;
+      border-bottom: 5px solid #ecf0f1;
+
+  }
+  section div img{
+      width: 70%;
+      height: 120px;
+      padding-top: 2%;
+      margin: 0 15%;
+  }
+
+  #caixa-2{
+      background: radial-gradient(#ecf0f1,#2ecc71);
+      border-radius: 10px;
+      width: 46%;
+      height: auto;
+      margin: 2% 2% 1% 2%;
+      float: right;
+  }
+  #two{
+      font-size: 22px;
+      text-align: center;
+      border-bottom: 5px solid #ecf0f1;
+  }
+
+  #partner{
+      width: 200px;
+      height: 100px;
+      padding: 10px 0px 5px 20px;
+  }
+
+  #caixa-3{
+      background: radial-gradient(#ecf0f1,#2ecc71);
+      border-radius: 10px;
+      width: 46%;
+      height: 150px;
+      margin: 1% 2% 2% 2%;
+      float: right;
+
+  }
+  #tree{
+      font-size: 22px;
+      text-align: center;
+      border-bottom: 5px solid #ecf0f1;
+  }
+}
+
+  /*SMARTPHONE*/
+@media only screen and (min-width: 310px ) and ( max-width: 729px){
+  .principal{
+      padding-top: 90px;
+      width: 100%;
+      margin: auto;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+  }
+
+  figure.foto-legenda figcaption{
+    /*font-family: 'Quicksand', sans-serif;*/
+    font-family: 'Bitter', serif;
+    opacity: 0;
+    position: absolute;
+    /*top: 0px;*/
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: justify;
+    text-shadow: 2px 2px 8px #000;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-top: 0px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+  }
+
+  #caixa-1{
+
+      background: radial-gradient(#ecf0f1,#2ecc71);
+      width: 80%;
+      min-height: 420px;
+      margin: 2% auto;
+      border-radius: 10px;
+  }
+
+  #one{
+      font-size: 22px;
+      text-align: center;
+      border-bottom: 5px solid #ecf0f1;
+
+  }
+  section div img{
+      width: 70%;
+      height: 120px;
+      padding-top: 2%;
+      margin: 0 15%;
+  }
+
+  #caixa-2{
+      background: radial-gradient(#ecf0f1,#2ecc71);
+      border-radius: 10px;
+      width: 80%;
+      height: auto;
+      margin: 2% auto;
+  }
+  #two{
+      font-size: 22px;
+      text-align: center;
+      border-bottom: 5px solid #ecf0f1;
+  }
+
+  #partner{
+      width: 200px;
+      height: 100px;
+      padding: 10px 0px 5px 20px;
+  }
+
+  #caixa-3{
+      background: radial-gradient(#ecf0f1,#2ecc71);
+      border-radius: 10px;
+      width: 80%;
+      height: 150px;
+      margin: 2% auto;
+
+  }
+  #tree{
+      font-size: 22px;
+      text-align: center;
+      border-bottom: 5px solid #ecf0f1;
+  }
+
+}
+
+figure.foto-legenda:hover figcaption{
+  opacity: 1;
+}
+
+article.box-destaque{
+    position: relative;
+    width: 100%;
+    height: auto;
+    height: 400px;
+    background-image: url(../_img/destaque.fw.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: content-box;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+article.box-destaque div{
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5) !important;
+    position: absolute;
+    height: 20%;
+    padding-top: 80%;
+    z-index: 20px;
+}
+#dest{
+    background:#bdc3c7;
+
+}
+#dest h1{
+    padding-left: 25px;
+}
+#sec{
+    background:#bdc3c7;
+    height: 30px;
+}
+#sec h3{
+    padding-left: 25px;
+}
+
+
+
+footer{
+    clear: both;
+    width:auto;
+    background: url(../_lib/img/LOGO-PAW.png) right bottom no-repeat, url(../_lib/img/bg-1.png) left top repeat;
+    height: 120px;
+    padding: 10px;
+    text-align:center;
+    font-style:bold;
+    font-size: 13px;
+    margin-bottom: 0px;
+}

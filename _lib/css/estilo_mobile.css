@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Arimo';
+@import 'https://fonts.googleapis.com/css?family=Baloo+Tamma';
+@import 'https://fonts.googleapis.com/css?family=Pacifico';
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
+@import 'https://fonts.googleapis.com/css?family=Racing+Sans+One';
+@import 'https://fonts.googleapis.com/css?family=Monofett';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Squada+One';
+
+*{
+
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    font-family: Arial, sans-serif;
+    background-color: #dddddd;
+    color: rgba(0, 0, 0, 1);
+}
+/*
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+*/
+
+header{
+    position: fixed;
+    background-color: #34495e;
+    height: 125px;
+    width: 100%;
+    z-index: 2;
+}
+header img{
+
+    /*width: 40%;*/
+    /*height: auto;*/
+    width: 150px;
+    height: 90px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+/* Formatação de menu */
+nav#menu{
+    display: block;
+    float: right;
+}
+
+nav#menu ul{
+
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 00px;
+    left: 160px;
+    right: 0;
+    padding-right: 2%;
+}
+
+nav#menu li{
+
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    -woz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+
+}
+
+nav#menu li:hover{
+    background-color: #1abc9c;
+}
+
+nav#menu h1{
+    display: none;
+}
+
+nav#menu a{
+    font-family: 'Squada One', cursive;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    color: #ffffff
+}
+
+.principal{
+
+    padding-top: 90px;
+    width: 1000px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.box-destaque{
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    background:url(../_img/destaque.fw.png);
+}
+
+#info{
+    width: 1000px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    margin-top: 296px;
+
+}
+#dest{
+    background:#bdc3c7;
+
+}
+#dest h1{
+    padding-left: 25px;
+}
+#sec{
+    background:#bdc3c7;
+    height: 30px;
+}
+#sec h3{
+    padding-left: 25px;
+}
+
+#caixa-1{
+
+    background: radial-gradient(#ecf0f1,#2ecc71);
+    width: 440px;
+    height: 445px;
+    margin: 25px;
+    float: left;
+    border-radius: 10px;
+}
+
+#one{
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 5px solid #ecf0f1;
+
+}
+section div img{
+    width: 395px;
+    height: 120px;
+    padding: 10px 0px 5px 20px;
+}
+
+#caixa-2{
+    background: radial-gradient(#ecf0f1,#2ecc71);
+    border-radius: 10px;
+    width: 440px;
+    height: 270px;
+    margin: 25px 26px 0px 0px;
+    float: right;
+}
+#two{
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 5px solid #ecf0f1;
+}
+
+#partner{
+    width: 200px;
+    height: 100px;
+    padding: 10px 0px 5px 20px;
+}
+
+#caixa-3{
+    background: radial-gradient(#ecf0f1,#2ecc71);
+    border-radius: 10px;
+    width: 440px;
+    height: 150px;
+    margin: 25px;
+    float: right;
+
+}
+#tree{
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 5px solid #ecf0f1;
+}
+
+
+footer{
+
+    width:auto;
+    background: url(../_img/LOGO-PAW.png) right bottom no-repeat, url(../_img/bg-1.png) left top repeat;
+    height: 120px;
+    padding: 10px;
+    text-align:center;
+    font-style:bold;
+    font-size: 13px;
+    clear: both;
+}

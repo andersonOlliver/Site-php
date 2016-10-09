@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Candal';
+
+body{
+    min-width: 700px;
+}
+.painel {
+    margin-top: 0px;
+    position: absolute !important;
+    width: 80%;
+    margin-left: 10%;
+    height: 85%;
+}
+
+fieldset {
+    margin: 0 auto;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding: 15px;
+    width: 80%;
+}
+
+fieldset > legend {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+}
+
+br.block {
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+input {
+    border: 1px solid #666;
+    border-radius: 4px;
+    height: 25px;
+}
+
+label {
+    display: inline-block;
+}
+
+label[for="funcionario"] {
+    margin-right: 104px;
+    
+
+}
+
+label[for="codigoFuncionario"] {
+    margin-right: 49px;
+}
+
+label[for="cargo"] {
+    margin-right: 142px;
+}
+
+label[for="telefone"] {
+    margin-right: 128px;
+}
+
+span#msg-erro{
+    display: none;
+}
+
+div#botoes{
+    max-width:80%;
+    float:right;
+    margin-right:10%;
+    display: block;
+    position: inherit;
+}
+
+.botao-personalizado {
+    background-color: #2980b9;
+    height: auto;
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.5s;
+}
+.botao-personalizado:hover {
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,0.24),0 8px 25px 0 rgba(0,0,0,0.19);
+    /*margin-top: -2px;*/
+}
+
+section#form{
+    padding-top: 80px;
+    position: relative;
+}
+
+div#msg{
+    font-family: 'Candal', sans-serif;
+    font-size: 2vw;
+    display: none;
+    margin: 20% auto auto auto;
+    text-align: center;
+}
+
+input#voltar{
+      margin: 5% auto;
+}
+.voltar{
+  background-color: #2980b9;
+  height: auto;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.5s;
+}
