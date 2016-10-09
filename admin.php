@@ -8,14 +8,14 @@
     <body style="zoom:0">
         <div id="interface-menu">
           <header>
-            <a href="index.php"><img src="_lib/img/logo_final.fw.png"></a>
+            <a href="index.php"><img src="_img/logo_final.fw.png"></a>
             <nav id="menu">
               <h1>Menu Principal</h1>
               <ul type="disk">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="admin.php">Cadastro</a></li>
                 <li><a href="#">Fotos</a></li>
-                <li><a href="https://www.facebook.com/Aratur/">acebook</a></li>
+                <li><a href="https://www.facebook.com/Aratur/">Facebook</a></li>
                 <li><a href="#">Fale conosco</a></li>
               </ul>
             </nav>
@@ -73,9 +73,9 @@
             </footer>
         </main>
     </body>
-    <link rel="stylesheet" href="_lib/css/estilo.css" media="(min-width: 801px)" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="_lib/css/estilo_mobile.css" media="(min-width: 320px) and (max-width: 800px)" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="_lib/css/admin.css" media="(min-width: 788px)" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="_lib/css/admin_mobile.css" media="(min-width: 320px) and (max-width: 787px)" title="no title" charset="utf-8">
-    <script src="_lib/js/controlador.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="_css/estilo.css" media="(min-width: 801px)" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="_css/estilo_mobile.css" media="(min-width: 320px) and (max-width: 800px)" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="_css/admin.css" media="(min-width: 788px)" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="_css/admin_mobile.css" media="(min-width: 320px) and (max-width: 787px)" title="no title" charset="utf-8">
+    <script src="_script/controlador.js" charset="utf-8"></script>
 </html>

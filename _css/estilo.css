@@ -504,7 +504,7 @@ article.box-destaque div{
 footer{
     clear: both;
     width:auto;
-    background: url(../_lib/img/LOGO-PAW.png) right bottom no-repeat, url(../_lib/img/bg-1.png) left top repeat;
+    background: url(../_img/LOGO-PAW.png) right bottom no-repeat, url(../_img/bg-1.png) left top repeat;
     height: 120px;
     padding: 10px;
     text-align:center;

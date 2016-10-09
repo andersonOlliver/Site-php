@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Página Inicial</title>
-    <link rel="stylesheet" href="_lib/css/estilo.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="_css/estilo.css" media="screen" title="no title" charset="utf-8">
     
   </head>
   <body>
       <header>
-        <a href="index.php"><img src="_lib/img/logo_final.fw.png"></a>
+        <a href="index.php"><img src="_img/logo_final.fw.png"></a>
         <nav id="menu">
           <h1>Menu Principal</h1>
           <ul type="disk">
@@ -28,7 +28,7 @@
           </div> -->
 
           <figure class="foto-legenda">
-            <img src="_lib/img/destaque.fw.png" />
+            <img src="_img/destaque.fw.png" />
             <figcaption>
               <h3>Sobre nós</h3>
               <p>Empresa Aratur Transportes oferece serviços de qualidade no Mato Grosso. Consciente das exigências do mercado e das expectativas de seus clientes, a Aratur Transportes se compromete com a qualidade, oferecendo atendimento personalizado em todo o processo de locação. Além de oferecer moderna Van de turismo para fretamento no estado.</p>
@@ -47,12 +47,12 @@
           <section>
              <div id="caixa-1">
                 <p id="one" style="font-family: 'Racing Sans One', cursive;">Viagens</p>
-                <img src="_lib/img/caixa1.png">
+                <img src="_img/caixa1.png">
                 <p style="font-family: 'Quicksand', sans-serif; margin:10px;">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
              </div>
              <div id="caixa-2">
                 <p id="two" style="font-family: 'Racing Sans One', cursive;">Parceiro</p>
-                <img id="partner" src="_lib/img/partner.jpg">
+                <img id="partner" src="_img/partner.jpg">
                 <p style="font-family: 'Quicksand', sans-serif; margin:10px;">Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes.</p>
 
              </div>

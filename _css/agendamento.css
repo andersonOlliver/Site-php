@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Candal';
+
+body{
+    min-width: 700px;
+}
+
+section{
+    height: 30%;
+    margin: 150px;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+}
+
+
+
+
+
+
