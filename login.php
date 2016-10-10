@@ -8,17 +8,17 @@
         <div id="logo-login">
             <img src="_img/logo_final.fw.png">
         </div>
-        <form action="" method="">
+        <form action="_controlador/logar-usuario.php" method="POST">
             <div id="container">
                 <fieldset>
                     <legend>Login SISTUR</legend>
                     <div>
                         <label>Usuário</label>
-                        <input type="text" name="usuario" placeholder="Digite seu usuário">
+                        <input type="text" name="usuario" id="usuario" placeholder="Digite seu usuário">
                     </div>
                     <div>
                         <label>Senha</label>
-                        <input type="password" name="senha" placeholder="Digite sua senha">
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
                     </div>
                     <div>
                         <button type="submit">Entrar</button>
