@@ -19,7 +19,7 @@
                     <ul type="disk">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="admin.php">Cadastro</a></li>
-                        <li><a href="#">Fotos</a></li>
+                        <li><a href="login.php">Sistur</a></li>
                         <li><a href="https://www.facebook.com/Aratur/">Facebook</a></li>
                         <li><a href="agendamento.php">Agendamento</a></li>
                     </ul>
@@ -27,20 +27,28 @@
             </header>
         </div>
         <main class="principal painel">
-            <section>
-                <div id="descricao">
-                    <p>Solicite sua passagem</p>
+            <div id="descricao">
+                    <p>Agora você pode solicitar passagens pela web, agende a sua agora mesmo!</p>
                 </div>
+            <section>
+                
                 <form action="" method="">
                     <fieldset>
                         <legend>Dados Pessoais</legend>
                         <div>
                             <label>Nome</label>
-                            <input type="text" name="nome" placeholder="Digite seu nome"> 
+                            <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required> 
                             <label>Sobrenome</label>
                             <input type="text" name="sobrenome" placeholder="Digite seu sobrenome"
                         </div>
-
+                        <div>
+                            <label>Tel:</label>
+                            <input type="number" name="telefone" placeholder="Digite seu telefone" required>
+                        </div>
+                        <div>
+                            <label>E-mail</label>
+                            <input type="text" name="email" placeholder="Digite seu e-mail">
+                        </div>
 
                     </fieldset>
                     <fieldset>
@@ -57,9 +65,19 @@
                                 <option value="cuiaba">Cuiabá</option>
                             </select>
                         </div>
+                        <div>
+                            <label>Rua</label>
+                            <input type="text" name="rua" placeholder="Digite nome da rua">
+                            <label>Quadra</label>
+                            <input type="text" name="quadra" placeholder="Digite a quadra">
+                            <label>Número</label>
+                            <input type="number" name="numero" style="width:40px">
+                        </div>
 
                     </fieldset>
-                    <button type="submit">Salvar</button>
+                    <div id="butao">
+                        <button type="submit">Enviar</button>
+                    </div>
                 </form>
 
             </section>

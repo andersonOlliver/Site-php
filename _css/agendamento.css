@@ -1,25 +1,27 @@
-@charset "UTF-8";
-@import 'https://fonts.googleapis.com/css?family=Candal';
-
-body{
-    min-width: 700px;
+*{
+    padding: 0;
+    margin: 0;
 }
+
 #descricao{
-    margin-bottom: 50px;
-    font-size: 28px;
+    
+    position: absolute;
+    margin-top: 60px;
+    margin-left: inherit;
+    
 }
+
 section{
-    height: 30%;
-    margin: 150px;
+   margin: auto;
+   width: 850px;
+   margin-top: 125px;
+   
 }
 
-footer{
+#nome{
+    margin: 0px 0px 5px 5px ;
+}
+#butao{
+    margin: 20px 5px 5px 65px;
     position: relative;
-    bottom: 0;
 }
-
-
-
-
-
-
