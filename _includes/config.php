@@ -9,12 +9,8 @@ $bd_host = "localhost";
 
 //$_config["BD_USER"] = "";
 
-$connBD = mysql_connect($bd_host, 
-        $bd_user, 
-        $bd_pass, 
-        $bd_name);
+$connBD = mysql_connect($bd_host, $bd_user, $bd_pass, $bd_name);
 
-mysqli_set_charset($connBD,"utf8");
-
-
+echo getcwd();
+//mysqli_set_charset($connBD);
 ?>
