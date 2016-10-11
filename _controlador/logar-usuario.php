@@ -1,6 +1,5 @@
 <?php
 
-
 require("../_includes/modelos/Usuario.php");
 
 $usuario = new Usuario($_POST['usuario'], $_POST['senha']);
@@ -17,7 +16,6 @@ if($usuario == NULL){
 }else{
     echo "<br/><br/><br/>ID = ".$usuario->getId().", <br/>Login = ".$usuario->getLogin().", <br/>Senha = ".$usuario->getSenha();
 }
-
 
 
 //echo $usuario->todos();

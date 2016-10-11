@@ -58,6 +58,5 @@ class UsuarioDAO {
     function getConnBD() {
         return $this->connBD;
     }
-
 }
 ?>
