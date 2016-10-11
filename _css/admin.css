@@ -45,7 +45,7 @@ label {
 
 label[for="funcionario"] {
     margin-right: 104px;
-    
+
 
 }
 
@@ -108,20 +108,20 @@ div#msg{
 }
 
 input#voltar{
-      margin: 5% auto;
+    margin: 5% auto;
 }
 .voltar{
-  background-color: #2980b9;
-  height: auto;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.5s;
+    background-color: #2980b9;
+    height: auto;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.5s;
 }

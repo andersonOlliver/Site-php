@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+h2#titulo{
+    margin: 20px ;
+    padding-left: 30px;
+}
+
+section{
+    padding: 20px;
+}
+
+p {
+    animation-duration: 2s;
+    animation-name: slidein;
+    margin-left: 4%;
+    max-width: 95%;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 40%;
+        width: 150%; 
+    }
+
+    to {
+        margin-left: 4%;
+        width: 100%;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+thead tr:last-child th {border-bottom: 1.5px solid #dddddd;}
+
+tr:nth-child(even){
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+}
+
+tr:hover {background-color: #f5f5f5}
+
+.button{
+    color: #aaa;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.edit:hover {
+    color: #0a79df;
+}
+
+.delete:hover {
+    color: #dc2a2a;
+}
+
+section#msg-confirma{
+    max-width:40%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+section#msg-confirma > h1{
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+div#botoes{
+    margin-top: 4%;
+    margin: 0 auto;
+    display: block;
+    position: inherit;
+}
+
+.botao-personalizado {
+    background-color: #2980b9;
+    height: auto;
+    width: 20%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.5s;
+}
+.botao-personalizado:hover {
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,0.24),0 8px 25px 0 rgba(0,0,0,0.19);
+}

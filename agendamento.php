@@ -28,10 +28,10 @@
         </div>
         <main class="principal painel">
             <div id="descricao">
-                    <p>Agora você pode solicitar passagens pela web, agende a sua agora mesmo!</p>
-                </div>
+                <p>Agora você pode solicitar passagens pela web, agende a sua agora mesmo!</p>
+            </div>
             <section>
-                
+
                 <form action="" method="">
                     <fieldset>
                         <legend>Dados Pessoais</legend>
