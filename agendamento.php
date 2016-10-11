@@ -1,6 +1,3 @@
-<?php
-    require '_includes/config.php';
-?>
 
 <!DOCTYPE html>
 <html>
@@ -30,16 +27,14 @@
                 </nav>
             </header>
         </div>
+       
         <main class="principal painel">
             <div id="descricao">
                 <p>Agora você pode solicitar passagens pela web, agende a sua agora mesmo!</p>
             </div>
             <section>
-                <?php
-                    $query = mysql_query("SELECT nome FROM tb_cliente");
-                ?>
-                
-                <form method="POST" action="_includes/modelos/pedido.php">
+
+                <form  method="POST" action="_includes/modelos/pedido.php">
                     <fieldset>
                         <legend>Dados Pessoais</legend>
                         <div>
@@ -62,16 +57,38 @@
                         <legend>Dados Endereço</legend>
                         <div id="destino"
                              <label>Cidade Origem</label>
-                            <select>
-                                <?php while ($city = mysql_fetch_array($query)) { ?>
-                                    <option value="<?php echo $city['nome'] ?>"></option>
-                                <?php } ?>
-                                <option value="cuiaba">Cuiabá</option>
+
+                            <select name="cidades">
+                                <option>Selecione</option>
+                                <?php
+                                $conn = new mysqli("localhost", "root", "", "db_sistur");
+
+                                $result = $conn->query("SELECT idcidade, nome FROM tb_cidade");
+
+                                while ($dados_cidades = $result->fetch_assoc()) {
+                                    ?>
+
+                                    <option value="<?php echo $dados_cidades['idcidade'] ?>" ><?php echo $dados_cidades['nome'] ?>
+                                    </option> <?php
+                            }
+                                ?>
                             </select>
+
                             <label>Cidade Destino</label>
                             <select>
-                                <option value="araputanga">Araputanga</option>
-                                <option value="cuiaba">Cuiabá</option>
+                                <option>Selecione</option>
+                                <?php
+                                $conn = new mysqli("localhost", "root", "", "db_sistur");
+
+                                $result = $conn->query("SELECT idcidade, nome FROM tb_cidade");
+
+                                while ($dados_cidades = $result->fetch_assoc()) {
+                                    ?>
+
+                                    <option value="<?php echo $dados_cidades['idcidade'] ?>" ><?php echo $dados_cidades['nome'] ?>
+                                    </option> <?php
+                            }
+                                ?>
                             </select>
                         </div>
                         <div>

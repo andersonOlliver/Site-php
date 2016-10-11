@@ -30,20 +30,22 @@
         
         $email = isset($_POST['email']) ? $_POST['email'] : null;
 
+        $cidades = isset($_POST['cidades']) ? $_POST['cidades'] : null;
+        
         //$senha = md5($_POST['senha']);
 
-        if (($_SERVER['REQUEST_METHOD'] == "POST") && ($nome && $sobrenome && $telefone && $email)) {
+        if (($_SERVER['REQUEST_METHOD'] == "POST") && ($nome && $sobrenome && $telefone && $email && cidades)) {
 
             echo "<br />nome: " . $nome;
             echo "<br />sobrenome: " . $sobrenome;
             echo "<br />telefone: " . $telefone;
             echo "<br />email" . $email;
+            echo "<br />cidades".$cidades;
             
             //Insere dados dos campos na tabela
-            $sql_insere_dados = "INSERT INTO tb_cliente (nome,sobrenome,telefone,email)VALUES ('" . $nome . "','" . $sobrenome . "','" . $telefone . "', '" . $email. "');";
-            
-            
-            $result = mysqli_query($connBD, $sql_insere_dados);
+            $sql_insere_dados = "INSERT INTO tb_cliente (nome,sobrenome,telefone,email)VALUES ('" . $nome . "','" . $sobrenome . "','" . $telefone . "', '" . $email. "')";
+           
+            $result = mysqli_query($connBD,$sql_insere_dados);
 
             if ($result) {
                 echo "<br />Dados inseridos com sucesso!";
