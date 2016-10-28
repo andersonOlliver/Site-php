@@ -27,7 +27,7 @@
                 </nav>
             </header>
         </div>
-       
+
         <main class="principal painel">
             <div id="descricao">
                 <p>Agora você pode solicitar passagens pela web, agende a sua agora mesmo!</p>
@@ -61,7 +61,7 @@
                             <select name="cidades">
                                 <option>Selecione</option>
                                 <?php
-                                $conn = new mysqli("localhost", "root", "", "db_sistur");
+                                $conn = new mysqli("localhost", "root", "olliver89632", "db_sistur");
 
                                 $result = $conn->query("SELECT idcidade, nome FROM tb_cidade");
 
@@ -70,7 +70,7 @@
 
                                     <option value="<?php echo $dados_cidades['idcidade'] ?>" ><?php echo $dados_cidades['nome'] ?>
                                     </option> <?php
-                            }
+                                }
                                 ?>
                             </select>
 
@@ -78,7 +78,7 @@
                             <select>
                                 <option>Selecione</option>
                                 <?php
-                                $conn = new mysqli("localhost", "root", "", "db_sistur");
+                                $conn = new mysqli("localhost", "root", "olliver89632", "db_sistur");
 
                                 $result = $conn->query("SELECT idcidade, nome FROM tb_cidade");
 
@@ -87,7 +87,7 @@
 
                                     <option value="<?php echo $dados_cidades['idcidade'] ?>" ><?php echo $dados_cidades['nome'] ?>
                                     </option> <?php
-                            }
+                                }
                                 ?>
                             </select>
                         </div>
@@ -109,7 +109,6 @@
                         <button type="submit">Enviar</button>
                     </div>
                 </form>
-
             </section>
             <footer style="font-family: 'Open Sans', sans-serif; color:white; margin-top: 130px">
                 Site desenvolvido por<br>
@@ -122,4 +121,5 @@
             </footer>
         </main>
     </body>
+    <!--<link href="_css/retaguarda.css" rel="stylesheet" type="text/css"/>-->
 </html>

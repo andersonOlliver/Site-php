@@ -4,10 +4,13 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
-$temp = unserialize($_SESSION['usuario']);
-$usuario = new Usuario($temp->getLogin(), $temp->getSenha());
+if ($temp = unserialize($_SESSION['usuario'])) {
+    $usuario = new Usuario($temp->getLogin(), $temp->getSenha());
 
-$dados = $usuario->todos();
+    $dados = $usuario->todos();
+} else {
+    header("Location: login.php");
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -34,7 +37,7 @@ $dados = $usuario->todos();
         </header>
         <main class="principal painel">
             <div id="msg-alerta" style="margin-top: 70px">
-                <p>Se você tem acesso aqui lembre-se: Com grandes poderes vem grandes responsabilidades!</p>
+                <p>Se você está vendo isso, lembre-se: Com grandes poderes vem grandes responsabilidades!</p>
             </div>
             <section id="dados-section">
                 <h2 id="titulo">Listagem dos usuários cadastrados</h2>
@@ -56,7 +59,7 @@ $dados = $usuario->todos();
                             echo "<td>" . $a->getSenha() . "</td>";
                             echo "<td>";
 
-                            echo "<a href='admin.php'><i class='material-icons button edit'>edit</i></a>";
+                            echo "<a href='admin.php?id=".$a->getId()."'><i class='material-icons button edit'>edit</i></a>";
                             echo "<a href='#' onclick='enviaPainelConfirmacao(" . $a->getId() . ")'><i class='material-icons button delete'>delete</i></a>";
 
                             "</td>";
@@ -69,33 +72,12 @@ $dados = $usuario->todos();
             </section>
             <section id="msg-confirma" style="display: none">
                 <h1>Tem certeza disso? </h1>
-                
+
                 <div id="botoes">
                     <input class="botao-personalizado" type="button" name="sim" id="sim" value="Sim" onclick="excluir()"  />
                     <input class="botao-personalizado" type="button" name="nao" id="nao" value="Não" onclick="retornaTabela()" />
                 </div>
             </section>
-            <script>
-                function enviaPainelConfirmacao(id) {
-                    document.getElementById("dados-section").style.display = "none";
-                    console.log(document.getElementById("msg-confirma").style.display);
-                    document.getElementById("msg-confirma").style.display = "block";
-                    console.log(document.getElementById("msg-confirma").style.display);
-                    localStorage.setItem("id", id);
-                }
-
-                function retornaTabela() {
-                    document.getElementById("msg-confirma").style.display = "none";
-                    document.getElementById("dados-section").style.display = "block";
-                    localStorage.removeItem("id");
-                }
-                
-                function excluir(){
-                    var id = localStorage.getItem("id");
-                    localStorage.removeItem("id");
-                    window.location = "_controlador/remover-usuario.php?id="+id;
-                }
-            </script>
             <footer style="font-family: 'Open Sans', sans-serif; color:white; margin-top: 130px">
                 Site desenvolvido por<br>
                 Rafael Penha RGA: 201311316041 <br>
@@ -108,4 +90,5 @@ $dados = $usuario->todos();
         </main>
     </body>
     <link href="_css/retaguarda.css" rel="stylesheet" type="text/css"/>
+    <script src="_script/controlador.js" type="text/javascript"></script>
 </html>

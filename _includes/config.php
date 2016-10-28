@@ -3,7 +3,7 @@
 define('BD_USER', 'root');
 
 $bd_user = "root";
-$bd_pass = "";
+$bd_pass = "olliver89632";
 $bd_name = "db_sistur";
 $bd_host = "localhost";
 

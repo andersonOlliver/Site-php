@@ -33,12 +33,12 @@ function salvar() {
     }
     msgFinal.style.display = "block";
     document.getElementById("msg") = msgFinal;
-    // document.getElementById("msg").style.display = "block";
+            // document.getElementById("msg").style.display = "block";
 }
 
-function voltarFormulario(){
-  document.getElementById("msg").style.display = "none";
-  document.getElementById("form").style.display = "block";
+function voltarFormulario() {
+    document.getElementById("msg").style.display = "none";
+    document.getElementById("form").style.display = "block";
 }
 
 function validarCampos(campos) {
@@ -53,4 +53,25 @@ function validarTexto(idElemento) {
     } else if (valor.length >= 3) {
         document.getElementById(idElemento).style.border = 1 + "px solid #057A0F";
     }
+}
+
+
+function enviaPainelConfirmacao(id) {
+    document.getElementById("dados-section").style.display = "none";
+    console.log(document.getElementById("msg-confirma").style.display);
+    document.getElementById("msg-confirma").style.display = "block";
+    console.log(document.getElementById("msg-confirma").style.display);
+    localStorage.setItem("id", id);
+}
+
+function retornaTabela() {
+    document.getElementById("msg-confirma").style.display = "none";
+    document.getElementById("dados-section").style.display = "block";
+    localStorage.removeItem("id");
+}
+
+function excluir() {
+    var id = localStorage.getItem("id");
+    localStorage.removeItem("id");
+    window.location = "_controlador/remover-usuario.php?id=" + id;
 }
